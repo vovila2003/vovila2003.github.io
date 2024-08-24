@@ -62,7 +62,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="wtracker.js" type="text/javascript"></script>
-    <script src="Build/ARTest.loader.js"></script>
+    <script src="Build/EasySales.loader.js"></script>
     <script>
         var initialize = async() =>{
             var unityCanvas = document.querySelector("#unity-canvas");
@@ -96,9 +96,9 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/ARTest.data",
-                    frameworkUrl: "Build/ARTest.framework.js",
-                    codeUrl: "Build/ARTest.wasm",
+                    dataUrl: "Build/EasySales.data",
+                    frameworkUrl: "Build/EasySales.framework.js",
+                    codeUrl: "Build/EasySales.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "Company",
                     productName: "EasySales",
@@ -117,7 +117,7 @@
             });
             StartMotionSensors();
             
-            StartGPS()
+            //Call Start GPS here --> StartGPS();
 
             
             
